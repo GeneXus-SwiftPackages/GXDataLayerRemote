@@ -16,13 +16,13 @@ let package = Package(
 		.target(name: "GXDataLayerRemoteWrapper",
 				dependencies: [
 					"GXDataLayerRemote",
-					.product(name: "GXDataLayer", package: "GXDataLayer", condition: .when(platforms: [.tvOS, .iOS, .watchOS]))
+					.product(name: "GXDataLayer", package: "GXDataLayer", condition: .when(platforms: [.watchOS, .iOS, .tvOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayerRemote",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayerRemote-1.0.0-beta+20230306150353.xcframework.zip",
-			checksum: "2a2c5fcf71ca02dcc296582950cbffbb9aeaf1b133e3a6ef56bab30354c82bbc"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayerRemote-1.0.0-beta+20230306155445.xcframework.zip",
+			checksum: "c8e9e4bd105b1eb725dd3e308504578ced89b2caec0ae7468e5e4ad15c62bb05"
 		)
 	]
 )
