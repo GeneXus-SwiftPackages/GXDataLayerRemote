@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXDataLayerRemoteWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.5.0-beta.20")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.5.0-beta.21")
 	],
 	targets: [
 		.target(name: "GXDataLayerRemoteWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayerRemote",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayerRemote-1.5.0-beta.20.xcframework.zip",
-			checksum: "80ade21cf4e178e996234dea80d6b16f569cdd064596a579e105e9f123574a8e"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayerRemote-1.5.0-beta.21.xcframework.zip",
+			checksum: "60fab1bfbc5ccb25683c3a19f45a42f984fee6f15dd424a4cd9582718e9e6752"
 		)
 	]
 )
