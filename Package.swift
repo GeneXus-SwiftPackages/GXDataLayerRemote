@@ -3,14 +3,14 @@ import PackageDescription
 
 let package = Package(
 	name: "GXDataLayerRemote",
-	platforms: [.iOS("13.0"), .watchOS("9.0"), .tvOS("13.0"), .visionOS("1.0")],
+	platforms: [.iOS("15.0"), .watchOS("10.0"), .tvOS("18.0"), .visionOS("2.0")],
 	products: [
 		.library(
 			name: "GXDataLayerRemote",
 			targets: ["GXDataLayerRemoteWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "3.0.0-beta.8")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "3.0.0-beta.9")
 	],
 	targets: [
 		.target(name: "GXDataLayerRemoteWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayerRemote",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayerRemote-3.0.0-beta.8.xcframework.zip",
-			checksum: "8ee22d148250ef7a363c02511d3da08fe2268914d4bf8e90d9837fc92c91ed55"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayerRemote-3.0.0-beta.9.xcframework.zip",
+			checksum: "b4be619fb50eaf99645ad6124caf64cb8c29683f585c6559d19bc85bf1507da9"
 		)
 	]
 )
